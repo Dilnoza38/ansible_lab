@@ -1,0 +1,16 @@
+all:
+  children:
+    webservers:
+      hosts:
+        webserver1:
+          ansible_host: 192.168.165.201
+        webserver2:
+          ansible_host: 192.168.165.195
+    dbservers:
+      hosts:
+        dbserver:
+          ansible_host: 192.168.165.192
+    lbservers:
+      hosts:
+        lbserver:
+          ansible_host: 192.168.165.210
